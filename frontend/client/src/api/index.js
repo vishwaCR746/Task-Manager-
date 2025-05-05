@@ -2,10 +2,7 @@
 import axios from 'axios';
 
 const API = axios.create({
-
-  baseURL: 'http://localhost:5000/api', // ✅ use HTTP unless SSL is configured
-
-
+  baseURL: 'https://task-manager-kxd7.onrender.com/api', // ✅ updated to Render backend
 });
 
 API.interceptors.request.use((config) => {
